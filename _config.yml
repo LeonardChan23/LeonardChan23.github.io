@@ -43,7 +43,7 @@ kramdown:
 
 
 # Disqus settings
-#disqus_username: _your_disqus_short_name_
+disqus_username: makitonoeru
 
 # Duoshuo settings
 #duoshuo_username:
@@ -64,7 +64,7 @@ kramdown:
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: ""
+sidebar-about-description: "是一个凡人，大概率是个废人"
 sidebar-avatar: https://avatars.githubusercontent.com/u/68027366?s=400&u=e80ecde15133497eb1c3f9c7f2e8f938c3c25609&v=4    # use absolute URL, seeing it's used in both `/` and `/about/`
 
 

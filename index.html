@@ -19,7 +19,7 @@ description: "Just a simple blogpage"
         </div>
     </a>
     <p class="post-meta">
-        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{post.date | date: "%H:%M"}} {{ post.date | date: "%B %-d, %Y" }}
+        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{post.date | date: "%H:%M"}} {{ post.date | date: "%B %-d, %Y" }}, <a href="{{site.url}}{{post.url}}#disqus_thread" data-disqus-identifier="{{post.id}}"></a>
     </p>
 </div>
 <hr>
@@ -40,3 +40,5 @@ description: "Just a simple blogpage"
     {% endif %}
 </ul>
 {% endif %}
+
+<script id="dsq-count-scr" src="//{{site.disqus_username}}.disqus.com/count.js" async></script>
