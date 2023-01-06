@@ -31,13 +31,12 @@ layout: default
                     {% comment %} endif {% endcomment %}
                     <span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }} </span>
                     <br/>
-                    <span class="meta"><a href="{{site.url}}{{page.url}}#disqus_thread">Link</a></span>
+                    <span class="meta"><a href="{{site.url}}{{page.url}}#disqus_thread" data-disqus-identifier="{{page.id}}">Link</a></span>
                 </div>
             </div>
         </div>
     </div>
 </header>
-<body>
 <!-- Post Content -->
 <article>
     <div class="container">
@@ -217,7 +216,7 @@ layout: default
         anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
     })
 </script>
-<script id="dsq-count-scr" src="//{{site.disqus_username}}.disqus.com/count.js" async></script>
+<script id="dsq-count-scr" src="{{site.disqus_username}}.disqus.com/count.js" async></script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <style>
     /* place left on bigger screen */
@@ -231,4 +230,3 @@ layout: default
     }
 </style>
 {% endif %}
-</body>
