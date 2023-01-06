@@ -5,7 +5,7 @@ header-img: img/home_bg.jpg
 email: leonardchan1023@gmail.com
 description: ""
 keyword: ""
-url: "http://LeonardChan23.github.io"              # your host, for absolute URL
+url: "https://LeonardChan23.github.io"              # your host, for absolute URL
 baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
 
 timezone: Asia/Shanghai
